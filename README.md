@@ -36,7 +36,7 @@
 
 - clone the application
 - ```
-  git clone https://github.com/SanyaWarvar/Toadstools-Money
+  git clone https://github.com/Username1548/word_explorer.git
   ```  
 - download [dart sdk](https://dart.dev/get-dart)
 - download [flutter sdk](https://docs.flutter.dev/get-started/install)
