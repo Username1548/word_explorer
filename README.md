@@ -1,16 +1,60 @@
-# word_explorer
+# Захаров Михаил КИ22-17/1Б
+Изначальные требования:
+Приложение для для заучивания слов. Требования:
+1. Регистрация и аутентификация пользователя.
+2. Создания и управление профилем пользователя.
+3. Добавление карточки.(Возможность добавить картинку)
+4. Уведомления и напоминания.
+6. Режим изучения слов.(Возможность перевернуть карточку чтобы увидеть определение)
+7. Реализация трёх категорий слов:
+- Изучаемые слова, которые только что добавили либо слова которые уже нужно повторить. - Знакомые слова, которые пользователь учит, но ещё не выучил.
+- Знакомые слова, которые пользователь учит, но ещё не выучил.
+- Выученные слова, которые пользователь уже знает очень хорошо.
 
-A new Flutter project.
 
-## Getting Started
+В ходе разработки было принято решение отказаться от возможности реализации пунктов 2, 4 и 7.
 
-This project is a starting point for a Flutter application.
+Эти решения были приняты из-за трудностями со сроками выполнения.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Паттерны:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Использовался паттерн синглтон (Singletone) для работы с базой данных по двум причинам:
+
+- Глобальный доступ к данным: Синглтон позволяет обеспечить глобальный доступ к данным базы данных из любой части приложения.
+- Экономия ресурсов: Создание и уничтожение объекта базы данных может быть затратным в плане ресурсов. Используя паттерн синглтон, можно избежать создания множества экземпляров базы данных и сэкономить ресурсы мобильного устройства.
+
+<img width="168" alt="Снимок экрана 2023-12-28 в 09 27 34" src="https://github.com/Username1548/word_explorer/assets/121106101/d16072ca-fb02-44a6-9b65-bb091d868427">
+
+## Точно не стоит использовать паттерн MVC (Model-View-Controller)
+
+Так как Flutter предлагает свою собственную архитектуру под названием Flutter’s Widget Tree, которая представляет собой комбинацию паттернов MVC и композиционного паттерна. Использование MVC может создать дополнительную сложность и неудобство для разработчика.
+
+# Установка приложения
+
+## Сгенерировать .apk файл
+
+- clone the application
+- ```
+  git clone https://github.com/SanyaWarvar/Toadstools-Money
+  ```  
+- download [dart sdk](https://dart.dev/get-dart)
+- download [flutter sdk](https://docs.flutter.dev/get-started/install)
+- enter the comands into the terminal
+```
+  flutter pub get
+  flutter build apk --release
+  ```
+
+Сгенерированный файл будет здесь: Project\build\app\outputs\apk\release\app-release.apk
+## Установить сгенерированный файл на телефон (Android)
+
+1. Скачать установочный файл на компьютер:
+
+2. Если .apk файл был сгенерирова самостоятельно, то он будет здесь: **Project\build\app\outputs\apk\release\app-release.apk**
+ 
+Либо скачать этот же файл с яндекс диска: **https://disk.yandex.ru/d/Jft_-G-gCEj3HQ**
+
+3. Переслать этот файл на мобильное устройство (либо скачивать сразу не него).
+
+4. Установить скачанный файл (следовать указаниям системы).
