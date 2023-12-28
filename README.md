@@ -53,7 +53,7 @@
 
 2. Если .apk файл был сгенерирова самостоятельно, то он будет здесь: **Project\build\app\outputs\apk\release\app-release.apk**
  
-Либо скачать этот же файл с яндекс диска: **https://disk.yandex.ru/d/Jft_-G-gCEj3HQ**
+Либо скачать этот же файл с яндекс диска: **https://disk.yandex.ru/d/fNRvdnGoRbqC_w**
 
 3. Переслать этот файл на мобильное устройство (либо скачивать сразу не него).
 
