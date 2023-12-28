@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "26945918259",
+    "project_id": "worldexplorer-ea22f",
+    "storage_bucket": "worldexplorer-ea22f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26945918259:android:d01a7951c4ed33218bda46",
+        "android_client_info": {
+          "package_name": "com.example.word_explorer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOikeWp1xKhMnmSvSVa8QG6YfTeiGp2yI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
